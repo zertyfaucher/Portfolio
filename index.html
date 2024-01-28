@@ -41,13 +41,12 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
             <h1 class="logo"><a style="text-decoration:none" href="index.html#fond">PortFolio</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.php" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#fond">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">Présentation</a></li>
+                    <li><a class="nav-link scrollto" href="#formation">Formation</a></li>
                     <li><a class="nav-link scrollto" href="index.php#work">PortFolio</a></li>
                     <li>
 
@@ -67,16 +66,10 @@
     <div class="hero-content display-table">
         <div class="table-cell">
             <div class="container">
-                <!--<p class="display-6 color-d">Hello, world!</p>-->
                 <h1 class="hero-title mb-4">Portfolio Quentin WENDLING</h1>
                 <p class="hero-subtitle">
                 <p class="display-6 color-d">BUT Informatique Parcours AGED</p>
-                <!--<span
-                  class="typed"
-                  data-typed-items="Designer, Développeur, Manager"
-                ></span>-->
                 </p>
-                <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
             </div>
         </div>
     </div>
@@ -85,11 +78,11 @@
 
 <main id="main">
     <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
+    <section class="about-mf sect-pt4 route">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="box-shadow-full">
+                    <div class="box-shadow-full" id="about">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="row">
@@ -118,7 +111,7 @@
                                             </p>
                                             <p>
                                                 <span class="title-s">Téléphone: </span>
-                                                <span>07 68 18 78 16</span>
+                                                <span>+33 7 68 18 78 16</span>
                                             </p>
                                         </div>
                                     </div>
@@ -238,7 +231,7 @@
                                     <p class="lead">
                                         Je suis WENDLING Quentin, actuellement étudiant en troisième année de Brevet Universitaire de Technologie (BUT) en Informatique, spécialisé dans le parcours AGED (Administration, Gestion et Exploitation des Données) à l'IUT de Paris - Rives de Seine (75016), faisant partie de l'université Paris Cité. Mon parcours est axé sur la conception et la gestion de bases de données de grand volume.
 
-Parallèlement, je suis également inscrit à l'Université du Québec à Chicoutimi (UQAC) au Canada, où je poursuis un baccalauréat en informatique. Cette double inscription me permet d'acquérir une perspective internationale tout en élargissant mes compétences dans le domaine de l'informatique. 
+                                        Parallèlement, je suis également inscrit à l'Université du Québec à Chicoutimi (UQAC) au Canada, où je poursuis un baccalauréat en informatique. Cette double inscription me permet d'acquérir une perspective internationale tout en élargissant mes compétences dans le domaine de l'informatique.
                                     </p>
                                     <p class="lead">
                                         Actuellement diplomé du BAC STI2D (sciences et technologies de l'industrie et du développement durable)
@@ -251,96 +244,98 @@ Parallèlement, je suis également inscrit à l'Université du Québec à Chicou
                     </div>
                     <!-- End About Section -->
 
-                    <!-- ======= Présentation BTS ======= -->
-                    <div class="title-box">
-                        <h3 class="title-left">Qu'est ce que le BUT Informatique ?</h3>
-                        <br>
-                        <p class="lead">
-                            Le bachelor universitaire de technologie Informatique
-                            (<b>BUT Informatique</b>), s'adresse à ceux qui souhaitent se former
-                            en trois ans aux métiers analyste d’exploitation informatique, traffic manager,
-                            architecte web, administrateur de base de données, administrateur réseau,...
-                            Pour par la suite intégré directement le monde du travail ou continuer
-                            des études, dans le domaine de l'informatique.
-                        </p>
-                        <br>
-                        <h3 class="title-right">Le BUT Informatique de l'université de Paris Cité propose trois parcours :</h3>
-                    </div>
-                    <div class="about">
-                        <div id="about2" class="box-shadow-full">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="title-box-2">
-                                        <h5 class="title-left">Parcours <b>RA</b></h5>
-                                    </div>
-                                    <p class="lead">
-                                        Le parcours réalisation d’applications : conception, développement, validation
-                                        regroupe les métiers liés à la conception,
-                                        au développement et à la réalisation technique et applicative de projets.
-                                        <br/><br/>
-                                        Les étudiant en BUT informatique parcours <b>RA</b> :
-                                        <br/>
-                                        <span class="addMarge">• Mobilise les techniques d’analyse pour développer une application
+                    <!-- ======= Présentation BUT ======= -->
+                    <div id="formation">
+                        <div class="title-box">
+                            <h3 class="title-left">Qu'est ce que le BUT Informatique ?</h3>
+                            <br>
+                            <p class="lead">
+                                Le bachelor universitaire de technologie Informatique
+                                (<b>BUT Informatique</b>), s'adresse à ceux qui souhaitent se former
+                                en trois ans aux métiers analyste d’exploitation informatique, traffic manager,
+                                architecte web, administrateur de base de données, administrateur réseau,...
+                                Pour par la suite intégré directement le monde du travail ou continuer
+                                des études, dans le domaine de l'informatique.
+                            </p>
+                            <br>
+                            <h3 class="title-right">Le BUT Informatique de l'université de Paris Cité propose trois parcours :</h3>
+                        </div>
+                        <div class="about">
+                            <div id="about2" class="box-shadow-full">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">Parcours <b>RA</b></h5>
+                                        </div>
+                                        <p class="lead">
+                                            Le parcours réalisation d’applications : conception, développement, validation
+                                            regroupe les métiers liés à la conception,
+                                            au développement et à la réalisation technique et applicative de projets.
+                                            <br/><br/>
+                                            Les étudiant en BUT informatique parcours <b>RA</b> :
+                                            <br/>
+                                            <span class="addMarge">• Mobilise les techniques d’analyse pour développer une application
                                         adaptée aux besoins du client</span>
-                                        <br/>
-                                        <span class="addMarge">• Adapte les solutions existantes</span>
-                                        <br/>
-                                        <span class="addMarge">• Code, débugue, teste, documente et communique sur les étapes de
+                                            <br/>
+                                            <span class="addMarge">• Adapte les solutions existantes</span>
+                                            <br/>
+                                            <span class="addMarge">• Code, débugue, teste, documente et communique sur les étapes de
                                             développement du produit</span>
-                                        <br/>
-                                        <span class="addMarge">• Choisit les options techniques appropriées au développement comme la
+                                            <br/>
+                                            <span class="addMarge">• Choisit les options techniques appropriées au développement comme la
                                         réutilisation, l’amélioration ou la reconfiguration de composants existants</span>
-                                        <br/>
-                                        <span class="addMarge">• Optimise efficacité, coûts et qualité. Valide les résultats avec les
+                                            <br/>
+                                            <span class="addMarge">• Optimise efficacité, coûts et qualité. Valide les résultats avec les
                                          représentants des utilisateurs type, intègre et garantit la solution dans
                                         son ensemble</span>
-                                        <br/><br/>
-                                    </p>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="title-box-2 pt-4 pt-md-0">
-                                        <h5 class="title-left">Parcours <b>AGED</b></h5>
+                                            <br/><br/>
+                                        </p>
                                     </div>
-                                    <p class="lead">
-                                        Le parcours administration, gestion et exploitation des données regroupe les métiers
-                                        liés à la conception et à la gestion de bases de données de grand volume.
-                                        <br/><br/>
-                                        Les étudiant en BUT informatique parcours <b>AGED</b> :
-                                        <br/>
-                                        <span class="addMarge">• Assure la politique d’accès aux données</span>
-                                        <br/>
-                                        <span class="addMarge">• Développe l’urbanisation et visualise des données</span>
-                                        <br/>
-                                        <span class="addMarge">• Veille à la qualité des échanges des données</span>
-                                        <br/>
-                                        <span class="addMarge">• Conçoit, développe et administre des bases de données, extrait des
+                                    <div class="col-md-6">
+                                        <div class="title-box-2 pt-4 pt-md-0">
+                                            <h5 class="title-left">Parcours <b>AGED</b></h5>
+                                        </div>
+                                        <p class="lead">
+                                            Le parcours administration, gestion et exploitation des données regroupe les métiers
+                                            liés à la conception et à la gestion de bases de données de grand volume.
+                                            <br/><br/>
+                                            Les étudiant en BUT informatique parcours <b>AGED</b> :
+                                            <br/>
+                                            <span class="addMarge">• Assure la politique d’accès aux données</span>
+                                            <br/>
+                                            <span class="addMarge">• Développe l’urbanisation et visualise des données</span>
+                                            <br/>
+                                            <span class="addMarge">• Veille à la qualité des échanges des données</span>
+                                            <br/>
+                                            <span class="addMarge">• Conçoit, développe et administre des bases de données, extrait des
                                         données externes, les structure et constitue de vastes entrepôts de
                                         données afin de concevoir et développer des applications décisionnelles</span>
-                                    </p>
-                                </div>
-                                <div>
-                                    <div class="title-box-2">
-                                        <h5 class="title-left">Parcours <b>DACS</b></h5>
+                                        </p>
                                     </div>
-                                    <p class="lead">
-                                        Le parcours déploiement d’applications communicantes et sécurisées regroupe
-                                        les métiers liés à la mise en place et à la sécurité des systèmes d’information
-                                        et des applications.
-                                        <br/><br/>
-                                        Les étudiant en BUT informatique parcours <b>AGED</b> :
-                                        <br/>
-                                        <span class="addMarge">• Installe et configure, le système d’exploitation et les outils de
+                                    <div>
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">Parcours <b>DACS</b></h5>
+                                        </div>
+                                        <p class="lead">
+                                            Le parcours déploiement d’applications communicantes et sécurisées regroupe
+                                            les métiers liés à la mise en place et à la sécurité des systèmes d’information
+                                            et des applications.
+                                            <br/><br/>
+                                            Les étudiant en BUT informatique parcours <b>AGED</b> :
+                                            <br/>
+                                            <span class="addMarge">• Installe et configure, le système d’exploitation et les outils de
                                         développement sur un poste de travail relié au réseau</span>
-                                        <br/>
-                                        <span class="addMarge">• Configure et sécurise les services utiles à l’entreprise</span>
-                                        <br/>
-                                        <span class="addMarge">• Construit des applications sachant communiquer avec les services tout
+                                            <br/>
+                                            <span class="addMarge">• Configure et sécurise les services utiles à l’entreprise</span>
+                                            <br/>
+                                            <span class="addMarge">• Construit des applications sachant communiquer avec les services tout
                                         en sécurisant les flux de données</span>
-                                        <br/> 
-                                        <span class="addMarge">• Déploie une politique de sécurité, optimise et rationalise les ressources
+                                            <br/>
+                                            <span class="addMarge">• Déploie une politique de sécurité, optimise et rationalise les ressources
                                         en fonctions des besoins de l’organisation</span>
-                                        <br/><br/>
-                                    </p>
+                                            <br/><br/>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -349,10 +344,6 @@ Parallèlement, je suis également inscrit à l'Université du Québec à Chicou
             </div>
         </div>
     </section>
-    </div>
-    </div>
-    </div>
-    </div>
 </main>
 <!-- End #main -->
 <section id="work" class="portfolio-mf sect-pt4 route">
@@ -486,7 +477,6 @@ Parallèlement, je suis également inscrit à l'Université du Québec à Chicou
                             </div>
                         </div>
                     </div>
-                    <!-- <h3 class="text-center">tutuuuuuu</h3> -->
 
                 </div>
             </div>
