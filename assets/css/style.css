@@ -1065,6 +1065,17 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.work-img {
+  height: 25vh;
+  overflow: hidden; 
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
