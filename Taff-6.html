@@ -18,6 +18,7 @@
     />
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/snake.css">
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -26,8 +27,6 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
             <h1 class="logo"><a style="text-decoration:none" href="index.html#fond">PortFolio</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.php" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -45,7 +44,7 @@
 <body>
 <div
         class="intro intro-single route bg-image"
-        style="background-image: url(assets/img/PortFolio-5/Fond-1.png)"
+        style="background-image: url(assets/img/PortFolio-6/Fond-1.png)"
 >
 
     <!--<div class="overlay-mf"></div>-->
@@ -57,12 +56,6 @@
                 </br>
                 </br>
                 </br>
-                <!--<ol class="breadcrumb d-flex justify-content-center">
-                  <li class="breadcrumb-item">
-                    <a href="#">Home</a>
-                  </li>
-                  <li class="breadcrumb-item active">Portfolio Details 2</li>
-                </ol>-->
             </div>
         </div>
     </div>
@@ -73,26 +66,18 @@
     <section id="portfolio-details" class="portfolio-details">
         <div class="container">
             <div class="row gy-4">
-                <h1>Démineur</h1>
+                <h1>Snake</h1>
                 <div class="col-lg-8">
-                    <div class="portfolio-details-slider swiper-container">
-                        <div class="swiper-wrapper align-items-center">
-                            <div class="swiper-slide">
-                                <img src="assets/img/PortFolio-5/Port-1.png" alt="" />
-                            </div>
+                    <div id="jeu">
+                                <button id="startBouton">Lancer la partie</button>
+                                <div id="record"> Votre meilleur score : 0</div>
+                                <canvas id="terrain"></canvas>
 
-                            <div class="swiper-slide">
-                                <img src="assets/img/PortFolio-5/Port-2.png" alt="" />
-                            </div>
+                                <img id="teteImage" src="assets/img/PortFolio-6/tete.png" style="display: none;" />
+                                <img id="corpImage" src="assets/img/PortFolio-6/corp.png" style="display: none;" />
+                                <img id="pommeImage" src="assets/img/PortFolio-6/pomme.png" style="display: none;" />
 
-                            <div class="swiper-slide">
-                                <img src="assets/img/PortFolio-5/Port-3.png" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/img/PortFolio-5/Port-4.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
+
                     </div>
                 </div>
 
@@ -100,20 +85,20 @@
                     <div class="portfolio-info">
                         <h3>Information</h3>
                         <ul>
-                            <li><strong>Catégorie</strong>: Programmation </li>
-                            <li><strong>Language</strong>: Virtual Basic</li>
-                            <li><strong>Project date</strong>: 2022 - 2023</li>
+                            <li><strong>Catégorie</strong>: Projet personnel </li>
+                            <li><strong>Language</strong>: HMTL/CSS/JS</li>
+                            <li><strong>Project date</strong>: Jan. 2024</li>
                             <li>
-                                <strong>Lien du Project</strong>: <a> </a><a href="https://github.com/zertyfaucher/Demineur-VB">GitHub</a>
+                                <strong>Lien du Project</strong>: <a> </a><a href="https://github.com/zertyfaucher/snake-perso">GitHub</a>
                             </li>
                         </ul>
                     </div>
                     <br>
                     <div class="portfolio-description">
-                        <h2>Démineur vb</h2>
+                        <h2>Snake</h2>
                         <p>
-                            Le but de ce projet est de créer une application en Virtual Basic reproduisant le jeu Démineur.
-                            L'application permet aussi d'enregistrer les scores des joueurs et de les consulter tel un classement.
+                            Dans ce projet, j'ai développé une version simple du jeu Snake en JavaScript,
+                            me concentrant sur les fondamentaux de la programmation et la logique du jeu.
                         </p>
                     </div>
                 </div>
@@ -121,7 +106,6 @@
                 <div class="portfolio-description">
                     <br>
                     <p>
-                        <br><br><br>
                     </p>
                     <br>
                 </div>
@@ -129,6 +113,7 @@
         </div>
     </section>
     <!-- End Portfolio Details Section -->
+    <br>
 </main>
 <!-- End #main -->
 
@@ -160,6 +145,7 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/typed.js/typed.min.js"></script>
+<script src="assets/js/snake.js"></script>
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
